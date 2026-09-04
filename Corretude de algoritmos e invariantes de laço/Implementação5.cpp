@@ -1,5 +1,5 @@
 /*
- * Implementaá∆o5.cpp
+ * Implementa√ß√£o5.cpp
  * 
  * Copyright 2026 Joseph <Joseph@JOSEPHPC>
  */
@@ -12,11 +12,11 @@ bool todosPositivos(const vector<int>& v) {
         if (v[i] <= 0) {
             todos = false;
         }
-    }s
+    }
 
     return todos;
 }
 
-// prÇ-condiá∆o:  o vetor (v) possui n£meros inteiros.
-// p¢s-condiá∆o: Se todos os elementos forem positivos, retorna true; caso contr†rio, retorna false.
-// invariante de laáo: No inicio de cada iteraá∆o i, todos Ç verdadeiro se e somente se todos os valores em v[0 ... i-1] forem positivos.
+// pr√©-condi√ß√£o:  o vetor (v) possui n√∫meros inteiros.
+// p√≥s-condi√ß√£o: Se todos os elementos forem positivos, retorna true; caso contr√°rio, retorna false.
+// invariante de la√ßo: No in√≠cio de cada itera√ß√£o i, todos √© verdadeiro se e somente se todos os valores em v[0 ... i-1] forem positivos.

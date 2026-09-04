@@ -1,5 +1,5 @@
 /*
- * Implementaá∆o1.c
+ * Implementa√ß√£o1.c
  * 
  * Copyright 2026 Joseph <Joseph@JOSEPHPC>
  * 
@@ -16,5 +16,5 @@ int soma(int n) {
     return resultado;
 }
 
-// prÇ-condiá∆oo: n >= 1;
-// p¢s-condiá∆o: A soma dos inteiros de 1 atÇ n
+// pr√©-condi√ß√£o: n >= 1;
+// p√≥s-condi√ß√£o: A soma dos inteiros de 1 at√© n

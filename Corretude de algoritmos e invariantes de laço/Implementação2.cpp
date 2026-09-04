@@ -1,5 +1,5 @@
 /*
- * Implementaá∆o2.cpp
+ * Implementa√ß√£o2.cpp
  * 
  * Copyright 2026 Joseph <Joseph@JOSEPHPC>
  * 
@@ -17,5 +17,5 @@ int maiorElemento(const vector<int>& v) {
     return maior;
 }
 
-// prÇ-condiá∆o: v.size() > 0, ou seja, o vetor n∆o pode ser vazio
-// p¢s-condiá∆o: deve retornar o maior valor de vv -> maior = max(v).
+// pr√©-condi√ß√£o: v.size() > 0, ou seja, o vetor n√£o pode ser vazio
+// p√≥s-condi√ß√£o: deve retornar o maior valor de v -> maior = max(v).

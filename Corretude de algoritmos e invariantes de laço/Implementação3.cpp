@@ -1,5 +1,5 @@
 /*
- * Implementaá∆o3.cpp
+ * Implementa√ß√£o3.cpp
  * 
  * Copyright 2026 Joseph <Joseph@JOSEPHPC>
  * 
@@ -18,6 +18,6 @@ int contarPositivos(const vector<int>& v) {
     return contador;
 }
 
-// prÇ-condiá∆o:  o vetor (v) de inteiros.
-// p¢s-condiá∆o: quantidade de elementos positivos de v
-// invariante de laáo: No inicio de cada iteraá∆oo i, contador Ç igual Ö quantidade de números positivos existentes em v[0 ... i-1]
+// pr√©-condi√ß√£o:  o vetor (v) de inteiros.
+// p√≥s-condi√ß√£o: quantidade de elementos positivos de v
+// invariante de la√ßo: No in√≠cio de cada itera√ß√£o i, contador √© igual √† quantidade de n√∫meros positivos existentes em v[0 ... i-1]

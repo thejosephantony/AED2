@@ -1,5 +1,5 @@
 /*
- * Implementaá∆o4.cpp
+ * Implementa√ß√£o4.cpp
  * 
  * Copyright 2026 Joseph <Joseph@JOSEPHPC>
  * 
@@ -16,6 +16,6 @@ int somarVetor(const vector<int>& v) {
     return soma;
 }
 
-// prÇ-condiá∆o:  o vetor (v) de inteiros.
-// p¢s-condiá∆o: a soma de todos os elementos de v
-// invariante de laáo: No inicio de cada iteraá∆o i, soma Ç igual Ö soma de todos os valores existentes em v[0 ... i-1]
+// pr√©-condi√ß√£o:  o vetor (v) de inteiros.
+// p√≥s-condi√ß√£o: a soma de todos os elementos de v
+// invariante de la√ßo: No in√≠cio de cada itera√ß√£o i, soma √© igual √† soma de todos os valores existentes em v[0 ... i-1]
