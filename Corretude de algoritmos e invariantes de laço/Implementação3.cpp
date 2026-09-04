@@ -20,4 +20,4 @@ int contarPositivos(const vector<int>& v) {
 
 // pr‚-condi‡Æo:  o vetor (v) de inteiros.
 // p¢s-condi‡Æo: quantidade de elementos positivos de v
-// invariante de la‡o: No inicio de cada itera‡Æo i, contador ‚ igual … quantidade de n£meros positivos existentes em v[0 ... i-1]
+// invariante de la‡o: No inicio de cada itera‡Æoo i, contador ‚ igual … quantidade de nœmeros positivos existentes em v[0 ... i-1]

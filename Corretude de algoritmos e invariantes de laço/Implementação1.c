@@ -16,5 +16,5 @@ int soma(int n) {
     return resultado;
 }
 
-// pr‚-condi‡Æo: n >= 1;
+// pr‚-condi‡Æoo: n >= 1;
 // p¢s-condi‡Æo: A soma dos inteiros de 1 at‚ n

@@ -17,5 +17,5 @@ int maiorElemento(const vector<int>& v) {
     return maior;
 }
 
-// pr‚-condi‡Æo: v.size() > 0, ou seja, o vetor n’o pode ser vazio
+// pr‚-condi‡Æo: v.size() > 0, ou seja, o vetor nÆo pode ser vazio
 // p¢s-condi‡Æo: deve retornar o maior valor de vv -> maior = max(v).
