@@ -1,47 +1,51 @@
-/*
- * BuscaBinária recursiva.cp
- * 
- * Copyright 2026 Joseph <Joseph@JOSEPHPC>
- * 
- */
-
-
 #include <iostream>
 #include <algorithm>
 #include <vector>
-
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::vector;
 
-int buscaBinariaRec(const vector<int>& v, int alvo) {
-	int esq = 0;
-	int dir = v.size() - 1;
+// Função auxiliar recursiva (recebe os limites)
+int buscaBinariaRecAux(const vector<int>& v, int alvo, int esq, int dir) {
+    // Caso base: elemento não encontrado
+    if (esq > dir) return -1;
+
     int meio = esq + (dir - esq) / 2;
-    if (v[meio] == alvo){
-		return meio;
-	}
-    if (v[meio] < alvo){
-		esq = meio + 1;
-        return buscaBinariaRec(v, alvo);}
-    else{
-		dir = meio - 1;
-        return buscaBinariaRec(v, alvo);
-	}
+
+    if (v[meio] == alvo)
+        return meio;
+    else if (v[meio] < alvo)
+        return buscaBinariaRecAux(v, alvo, meio + 1, dir);  // busca à direita
+    else
+        return buscaBinariaRecAux(v, alvo, esq, meio - 1);  // busca à esquerda
 }
 
-int main(){
-	vector<int> v = {2, 4, 1, 0, 5, 6};
-	sort(v.begin(), v.end()); // ordena o vector
-	
-	for(int x : v){
-		cout << x << " ";  // imprime o vector ordenado
-	}
-	cout << endl;
-	
-	cout << "Elemento na posição: " << buscaBinariaRec(v, 5) << endl;
+// Função wrapper (interface amigável)
+int buscaBinariaRec(const vector<int>& v, int alvo) {
+    return buscaBinariaRecAux(v, alvo, 0, static_cast<int>(v.size()) - 1);
+}
 
-	return 0;
+int main() {
+    vector<int> v = {2, 4, 1, 0, 5, 6};
+    std::sort(v.begin(), v.end());  // ordena: {0, 1, 2, 4, 5, 6}
+
+    cout << "Vetor ordenado: ";
+    for (int x : v) cout << x << " ";
+    cout << endl;
+
+    int pos = buscaBinariaRec(v, 5);
+    if (pos != -1)
+        cout << "Elemento 5 encontrado na posição " << pos << endl;
+    else
+        cout << "Elemento 5 não encontrado" << endl;
+
+    pos = buscaBinariaRec(v, 10);
+    if (pos != -1)
+        cout << "Elemento 10 encontrado na posição " << pos << endl;
+    else
+        cout << "Elemento 10 não encontrado" << endl;
+
+    return 0;
 }
