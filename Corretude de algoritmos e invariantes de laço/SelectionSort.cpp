@@ -19,7 +19,7 @@ using std::swap;
 void selectionSort(vector<int>& v){
 	for(int i = 0; i < ((int)v.size() - 1); i++){
 		int menor = i;
-		for(int j = i+ 1; j < (int)v.size(); j++){
+		for(int j = i+1; j < (int)v.size(); j++){
 			if(v[j] < v[menor]){
 				menor = j;
 			}
