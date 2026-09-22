@@ -25,6 +25,9 @@ int indiceMenor(const vector<int>& v){
 	return menor;
 	
 }
+
+
+
 int main(){
 	vector<int> v = {0, 1, -1, 5, 6, 88, -11};
 	cout << "O índice do menor valor é: " << indiceMenor(v) << endl;
